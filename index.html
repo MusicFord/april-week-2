@@ -15,6 +15,7 @@
       font-family: Arial, sans-serif;
       color: white;
       overflow-x: hidden;
+      background: black;
     }
 
     .background-video {
@@ -28,11 +29,10 @@
     }
 
     .overlay-video {
-      position: absolute;
-      top: 50px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 600px;
+      display: block;
+      margin: 100px auto 40px;
+      max-width: 80%;
+      height: auto;
       z-index: 1;
       pointer-events: none;
     }
@@ -40,20 +40,27 @@
     .content {
       position: relative;
       z-index: 2;
-      padding: 100px 20px 40px;
-      background: rgba(0, 0, 0, 0.5);
+      background: rgba(0, 0, 0, 0.6); /* Прозрачный фон */
+      padding: 40px 20px;
       max-width: 900px;
-      margin: 0 auto;
+      margin: 0 auto 100px;
       border-radius: 12px;
     }
 
     .content h1 {
       margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .content p {
+      margin: 20px 0;
+      line-height: 1.6;
     }
 
     .content img {
       max-width: 100%;
-      margin: 20px 0;
+      display: block;
+      margin: 20px auto;
       border-radius: 8px;
     }
   </style>
@@ -74,10 +81,10 @@
 
   <!-- Контент -->
   <div class="content">
-    <h1>Добро пожаловать на сайт</h1>
-    <p>Здесь можно разместить любой текст, описания, новости и так далее.</p>
+    <h1>Добро пожаловать</h1>
+    <p>Этот текст идёт под заголовочным видео. Здесь можно размещать полезную информацию, новости, описание проекта и так далее.</p>
     <img src="image1.jpg" alt="Картинка 1">
-    <p>Продолжение текста. Можно добавлять блоки, галереи и прочее.</p>
+    <p>Дополнительный текст. Можно добавить галерею, описание услуг, ссылки и прочее.</p>
     <img src="image2.jpg" alt="Картинка 2">
   </div>
 
