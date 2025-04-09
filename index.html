@@ -65,6 +65,23 @@
       margin: 20px auto;
       border-radius: 8px;
     }
+    .social-link {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.social-link img {
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-link img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
   </style>
 </head>
 <body>
@@ -186,10 +203,11 @@
 
  <p>Спасибо. <p>
 
-
-     <img src="tg.png" alt="Картинка 99">  
-
-
+<div class="social-link">
+  <a href="https://t.me/yourchannel" target="_blank">
+    <img src="tg.png" alt="Наш Telegram">
+  </a>
+</div>
   </div>
 
 </body>
