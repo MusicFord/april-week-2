@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Видео-фон сайт</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: Arial, sans-serif;
+      color: white;
+      overflow-x: hidden;
+      background: black;
+    }
+
+    .background-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -2;
+      object-fit: cover;
+    }
+
+    .overlay-video {
+      display: block;
+      margin: 100px auto 40px;
+      max-width: 80%;
+      height: auto;
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    .content {
+      position: relative;
+      z-index: 2;
+      background: rgba(0, 0, 0, 0.6); /* Прозрачный фон */
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: 0 auto 100px;
+      border-radius: 12px;
+    }
+
+    .content h1 {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .content p {
+      margin: 20px 0;
+      line-height: 1.6;
+    }
+
+    .content img {
+      max-width: 100%;
+      
+      margin: 20px auto;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Фоновое видео -->
+  <video class="background-video" autoplay muted loop>
+    <source src="1.mp4" type="video/mp4">
+    
+  </video>
+
+  <!-- Видео-заголовок (WebM) -->
+  <video class="overlay-video" autoplay muted loop>
+    <source src="title.webm" type="video/webm">
+    Ваш браузер не поддерживает видео.
+  </video>
+
+  <!-- Контент -->
+  <div class="content">
+    <h1>Дорогие игроки Aion, здравствуйте.</h1>
+    <p>Это команда разработчиков Aion. Сегодня мы подготовили это сообщение, чтобы заранее сообщить вам об изменениях, которые произойдут в одном из будущих обновлений, касающихся Люминеса, а также магических камней и божественных камней.</p>
+    <img src="image1.jpg" alt="Картинка 1">
+    <h1>Изменения Люминеса</h1>
+    <p>Класс Люминес был задуман как дамагер, способный быстро наносить мощный урон, и в этом аспекте он завоевал большую любовь игроков.
+Однако по сравнению с другими классами, у Люминеса слишком высокая устойчивость урона (sustained DPS) и слишком легко достигается минимальная эффективность, из-за чего постоянно поднимается вопрос баланса.
+Особенно в составе групп для подземелий и рейдов чрезмерное предпочтение этого класса стало сказываться на разнообразии в игре, и мы хотим учесть обратную связь от игроков по этому поводу.</p>
+    <img src="image2.jpg" alt="Картинка 2">
+  </div>
+
+</body>
+</html>
